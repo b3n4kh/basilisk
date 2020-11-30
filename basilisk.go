@@ -29,8 +29,8 @@ func printStonks(q Quote, rate float64) {
 
 	euroAskOz := q.Ask / rate
 	euroBidOz := q.Bid / rate
-	euroAskKg := q.Ask / 0.0283495
-	euroBidKg := q.Bid / 0.0283495
+	euroAskKg := q.Ask * 32.15075
+	euroBidKg := q.Bid * 32.15075
 
 	fmt.Printf("ASK:\nEUR/oz %.2f --> EUR/kg %.2f\n\n", euroAskOz, euroAskKg)
 	fmt.Printf("BID:\nEUR/oz %.2f --> EUR/kg %.2f\n\n", euroBidOz, euroBidKg)
